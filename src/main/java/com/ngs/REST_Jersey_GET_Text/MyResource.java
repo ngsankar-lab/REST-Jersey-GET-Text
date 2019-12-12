@@ -18,8 +18,16 @@ public class MyResource {
      * @return String that will be returned as a text/plain response.
      */
     @GET
+    @Path("getit1")
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
         return "Got it";
     }
+    @GET
+    @Path("getit2")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getIt2() {
+        return "Got it2";
+    }
+
 }
